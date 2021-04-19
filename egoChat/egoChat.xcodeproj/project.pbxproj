@@ -7,62 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F687B7C6262E194E0028978F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687B7C5262E194E0028978F /* AppDelegate.swift */; };
-		F687B7C8262E194E0028978F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687B7C7262E194E0028978F /* SceneDelegate.swift */; };
-		F687B7CA262E194E0028978F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687B7C9262E194E0028978F /* ViewController.swift */; };
-		F687B7CD262E194E0028978F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F687B7CB262E194E0028978F /* Main.storyboard */; };
-		F687B7CF262E194F0028978F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F687B7CE262E194F0028978F /* Assets.xcassets */; };
-		F687B7D2262E194F0028978F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F687B7D0262E194F0028978F /* LaunchScreen.storyboard */; };
+		3FCC4677C1F6EC8A8C437882 /* Pods_egoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1224C538EC9E0D08B122406 /* Pods_egoChat.framework */; };
+		F6AFF2CE262E299700A4EFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFF2CD262E299700A4EFF6 /* AppDelegate.swift */; };
+		F6AFF2D0262E299700A4EFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFF2CF262E299700A4EFF6 /* SceneDelegate.swift */; };
+		F6AFF2D2262E299700A4EFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFF2D1262E299700A4EFF6 /* ViewController.swift */; };
+		F6AFF2D5262E299700A4EFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AFF2D3262E299700A4EFF6 /* Main.storyboard */; };
+		F6AFF2D7262E299800A4EFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AFF2D6262E299800A4EFF6 /* Assets.xcassets */; };
+		F6AFF2DA262E299800A4EFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AFF2D8262E299800A4EFF6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F687B7C2262E194E0028978F /* egoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = egoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F687B7C5262E194E0028978F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F687B7C7262E194E0028978F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F687B7C9262E194E0028978F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F687B7CC262E194E0028978F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F687B7CE262E194F0028978F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F687B7D1262E194F0028978F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F687B7D3262E194F0028978F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		302E05AD74C5A50F2A730FB8 /* Pods-egoChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-egoChat.release.xcconfig"; path = "Target Support Files/Pods-egoChat/Pods-egoChat.release.xcconfig"; sourceTree = "<group>"; };
+		86E4794180981123BCC26DD6 /* Pods-egoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-egoChat.debug.xcconfig"; path = "Target Support Files/Pods-egoChat/Pods-egoChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A1224C538EC9E0D08B122406 /* Pods_egoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_egoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AFF2CA262E299700A4EFF6 /* egoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = egoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AFF2CD262E299700A4EFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6AFF2CF262E299700A4EFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6AFF2D1262E299700A4EFF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6AFF2D4262E299700A4EFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6AFF2D6262E299800A4EFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6AFF2D9262E299800A4EFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6AFF2DB262E299800A4EFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F687B7BF262E194E0028978F /* Frameworks */ = {
+		F6AFF2C7262E299700A4EFF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCC4677C1F6EC8A8C437882 /* Pods_egoChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F687B7B9262E194E0028978F = {
+		846D0B4A758781F59DBABF1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F687B7C4262E194E0028978F /* egoChat */,
-				F687B7C3262E194E0028978F /* Products */,
+				86E4794180981123BCC26DD6 /* Pods-egoChat.debug.xcconfig */,
+				302E05AD74C5A50F2A730FB8 /* Pods-egoChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1D0E88CEB3C06DC4452B808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1224C538EC9E0D08B122406 /* Pods_egoChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6AFF2C1262E299700A4EFF6 = {
+			isa = PBXGroup;
+			children = (
+				F6AFF2CC262E299700A4EFF6 /* egoChat */,
+				F6AFF2CB262E299700A4EFF6 /* Products */,
+				846D0B4A758781F59DBABF1F /* Pods */,
+				E1D0E88CEB3C06DC4452B808 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F687B7C3262E194E0028978F /* Products */ = {
+		F6AFF2CB262E299700A4EFF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F687B7C2262E194E0028978F /* egoChat.app */,
+				F6AFF2CA262E299700A4EFF6 /* egoChat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F687B7C4262E194E0028978F /* egoChat */ = {
+		F6AFF2CC262E299700A4EFF6 /* egoChat */ = {
 			isa = PBXGroup;
 			children = (
-				F687B7C5262E194E0028978F /* AppDelegate.swift */,
-				F687B7C7262E194E0028978F /* SceneDelegate.swift */,
-				F687B7C9262E194E0028978F /* ViewController.swift */,
-				F687B7CB262E194E0028978F /* Main.storyboard */,
-				F687B7CE262E194F0028978F /* Assets.xcassets */,
-				F687B7D0262E194F0028978F /* LaunchScreen.storyboard */,
-				F687B7D3262E194F0028978F /* Info.plist */,
+				F6AFF2CD262E299700A4EFF6 /* AppDelegate.swift */,
+				F6AFF2CF262E299700A4EFF6 /* SceneDelegate.swift */,
+				F6AFF2D1262E299700A4EFF6 /* ViewController.swift */,
+				F6AFF2D3262E299700A4EFF6 /* Main.storyboard */,
+				F6AFF2D6262E299800A4EFF6 /* Assets.xcassets */,
+				F6AFF2D8262E299800A4EFF6 /* LaunchScreen.storyboard */,
+				F6AFF2DB262E299800A4EFF6 /* Info.plist */,
 			);
 			path = egoChat;
 			sourceTree = "<group>";
@@ -70,13 +95,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F687B7C1262E194E0028978F /* egoChat */ = {
+		F6AFF2C9262E299700A4EFF6 /* egoChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F687B7D6262E194F0028978F /* Build configuration list for PBXNativeTarget "egoChat" */;
+			buildConfigurationList = F6AFF2DE262E299800A4EFF6 /* Build configuration list for PBXNativeTarget "egoChat" */;
 			buildPhases = (
-				F687B7BE262E194E0028978F /* Sources */,
-				F687B7BF262E194E0028978F /* Frameworks */,
-				F687B7C0262E194E0028978F /* Resources */,
+				33576181B2C609FBF062831D /* [CP] Check Pods Manifest.lock */,
+				F6AFF2C6262E299700A4EFF6 /* Sources */,
+				F6AFF2C7262E299700A4EFF6 /* Frameworks */,
+				F6AFF2C8262E299700A4EFF6 /* Resources */,
+				9C3440A7105862E50D5426C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,24 +111,24 @@
 			);
 			name = egoChat;
 			productName = egoChat;
-			productReference = F687B7C2262E194E0028978F /* egoChat.app */;
+			productReference = F6AFF2CA262E299700A4EFF6 /* egoChat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F687B7BA262E194E0028978F /* Project object */ = {
+		F6AFF2C2262E299700A4EFF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					F687B7C1262E194E0028978F = {
+					F6AFF2C9262E299700A4EFF6 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = F687B7BD262E194E0028978F /* Build configuration list for PBXProject "egoChat" */;
+			buildConfigurationList = F6AFF2C5262E299700A4EFF6 /* Build configuration list for PBXProject "egoChat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,55 +136,97 @@
 				en,
 				Base,
 			);
-			mainGroup = F687B7B9262E194E0028978F;
-			productRefGroup = F687B7C3262E194E0028978F /* Products */;
+			mainGroup = F6AFF2C1262E299700A4EFF6;
+			productRefGroup = F6AFF2CB262E299700A4EFF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F687B7C1262E194E0028978F /* egoChat */,
+				F6AFF2C9262E299700A4EFF6 /* egoChat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F687B7C0262E194E0028978F /* Resources */ = {
+		F6AFF2C8262E299700A4EFF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F687B7D2262E194F0028978F /* LaunchScreen.storyboard in Resources */,
-				F687B7CF262E194F0028978F /* Assets.xcassets in Resources */,
-				F687B7CD262E194E0028978F /* Main.storyboard in Resources */,
+				F6AFF2DA262E299800A4EFF6 /* LaunchScreen.storyboard in Resources */,
+				F6AFF2D7262E299800A4EFF6 /* Assets.xcassets in Resources */,
+				F6AFF2D5262E299700A4EFF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33576181B2C609FBF062831D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-egoChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C3440A7105862E50D5426C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-egoChat/Pods-egoChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-egoChat/Pods-egoChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-egoChat/Pods-egoChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		F687B7BE262E194E0028978F /* Sources */ = {
+		F6AFF2C6262E299700A4EFF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F687B7CA262E194E0028978F /* ViewController.swift in Sources */,
-				F687B7C6262E194E0028978F /* AppDelegate.swift in Sources */,
-				F687B7C8262E194E0028978F /* SceneDelegate.swift in Sources */,
+				F6AFF2D2262E299700A4EFF6 /* ViewController.swift in Sources */,
+				F6AFF2CE262E299700A4EFF6 /* AppDelegate.swift in Sources */,
+				F6AFF2D0262E299700A4EFF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F687B7CB262E194E0028978F /* Main.storyboard */ = {
+		F6AFF2D3262E299700A4EFF6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F687B7CC262E194E0028978F /* Base */,
+				F6AFF2D4262E299700A4EFF6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F687B7D0262E194F0028978F /* LaunchScreen.storyboard */ = {
+		F6AFF2D8262E299800A4EFF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F687B7D1262E194F0028978F /* Base */,
+				F6AFF2D9262E299800A4EFF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -165,7 +234,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F687B7D4262E194F0028978F /* Debug */ = {
+		F6AFF2DC262E299800A4EFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +295,7 @@
 			};
 			name = Debug;
 		};
-		F687B7D5262E194F0028978F /* Release */ = {
+		F6AFF2DD262E299800A4EFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,8 +350,9 @@
 			};
 			name = Release;
 		};
-		F687B7D7262E194F0028978F /* Debug */ = {
+		F6AFF2DF262E299800A4EFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E4794180981123BCC26DD6 /* Pods-egoChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,8 +369,9 @@
 			};
 			name = Debug;
 		};
-		F687B7D8262E194F0028978F /* Release */ = {
+		F6AFF2E0262E299800A4EFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302E05AD74C5A50F2A730FB8 /* Pods-egoChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,25 +391,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F687B7BD262E194E0028978F /* Build configuration list for PBXProject "egoChat" */ = {
+		F6AFF2C5262E299700A4EFF6 /* Build configuration list for PBXProject "egoChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F687B7D4262E194F0028978F /* Debug */,
-				F687B7D5262E194F0028978F /* Release */,
+				F6AFF2DC262E299800A4EFF6 /* Debug */,
+				F6AFF2DD262E299800A4EFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F687B7D6262E194F0028978F /* Build configuration list for PBXNativeTarget "egoChat" */ = {
+		F6AFF2DE262E299800A4EFF6 /* Build configuration list for PBXNativeTarget "egoChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F687B7D7262E194F0028978F /* Debug */,
-				F687B7D8262E194F0028978F /* Release */,
+				F6AFF2DF262E299800A4EFF6 /* Debug */,
+				F6AFF2E0262E299800A4EFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F687B7BA262E194E0028978F /* Project object */;
+	rootObject = F6AFF2C2262E299700A4EFF6 /* Project object */;
 }

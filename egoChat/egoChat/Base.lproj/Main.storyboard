@@ -77,6 +77,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendMsg:" destination="kkO-eI-CTG" eventType="touchUpInside" id="IUp-ul-1zy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TlX-us-oc6"/>
@@ -91,6 +94,10 @@
                             <constraint firstItem="WYc-Gd-gUz" firstAttribute="bottom" secondItem="TOX-5N-uZH" secondAttribute="bottom" id="xiS-gf-ZEW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="msgField" destination="WYc-Gd-gUz" id="9o4-Zm-0mC"/>
+                        <outlet property="sendBtn" destination="TOX-5N-uZH" id="wiY-lL-oIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A07-tm-Jyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F6AFF2D5262E299700A4EFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AFF2D3262E299700A4EFF6 /* Main.storyboard */; };
 		F6AFF2D7262E299800A4EFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AFF2D6262E299800A4EFF6 /* Assets.xcassets */; };
 		F6AFF2DA262E299800A4EFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AFF2D8262E299800A4EFF6 /* LaunchScreen.storyboard */; };
+		F6BF1C3F262E680600261FB0 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1C3E262E680600261FB0 /* ChatController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F6AFF2D6262E299800A4EFF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6AFF2D9262E299800A4EFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6AFF2DB262E299800A4EFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BF1C3E262E680600261FB0 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				86E4794180981123BCC26DD6 /* Pods-egoChat.debug.xcconfig */,
 				302E05AD74C5A50F2A730FB8 /* Pods-egoChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,13 +84,22 @@
 			children = (
 				F6AFF2CD262E299700A4EFF6 /* AppDelegate.swift */,
 				F6AFF2CF262E299700A4EFF6 /* SceneDelegate.swift */,
-				F6AFF2D1262E299700A4EFF6 /* ViewController.swift */,
+				F6BF1C41262E680E00261FB0 /* View Controllers */,
 				F6AFF2D3262E299700A4EFF6 /* Main.storyboard */,
 				F6AFF2D6262E299800A4EFF6 /* Assets.xcassets */,
 				F6AFF2D8262E299800A4EFF6 /* LaunchScreen.storyboard */,
 				F6AFF2DB262E299800A4EFF6 /* Info.plist */,
 			);
 			path = egoChat;
+			sourceTree = "<group>";
+		};
+		F6BF1C41262E680E00261FB0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6AFF2D1262E299700A4EFF6 /* ViewController.swift */,
+				F6BF1C3E262E680600261FB0 /* ChatController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +219,7 @@
 				F6AFF2D2262E299700A4EFF6 /* ViewController.swift in Sources */,
 				F6AFF2CE262E299700A4EFF6 /* AppDelegate.swift in Sources */,
 				F6AFF2D0262E299700A4EFF6 /* SceneDelegate.swift in Sources */,
+				F6BF1C3F262E680600261FB0 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@
 		3FCC4677C1F6EC8A8C437882 /* Pods_egoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1224C538EC9E0D08B122406 /* Pods_egoChat.framework */; };
 		F634D21D262F4E7B008ACB61 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F72B33262F4C2100B7E051 /* GlobalVariables.swift */; };
 		F634D220262F57CF008ACB61 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634D21F262F57CF008ACB61 /* Utilities.swift */; };
+		F634D22F26313EAC008ACB61 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634D22D26313EAC008ACB61 /* MessageTableViewCell.swift */; };
+		F634D23026313EAC008ACB61 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F634D22E26313EAC008ACB61 /* MessageTableViewCell.xib */; };
 		F6AFF2CE262E299700A4EFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFF2CD262E299700A4EFF6 /* AppDelegate.swift */; };
 		F6AFF2D0262E299700A4EFF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFF2CF262E299700A4EFF6 /* SceneDelegate.swift */; };
 		F6AFF2D2262E299700A4EFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFF2D1262E299700A4EFF6 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		86E4794180981123BCC26DD6 /* Pods-egoChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-egoChat.debug.xcconfig"; path = "Target Support Files/Pods-egoChat/Pods-egoChat.debug.xcconfig"; sourceTree = "<group>"; };
 		A1224C538EC9E0D08B122406 /* Pods_egoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_egoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F634D21F262F57CF008ACB61 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F634D22D26313EAC008ACB61 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		F634D22E26313EAC008ACB61 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		F6AFF2CA262E299700A4EFF6 /* egoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = egoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AFF2CD262E299700A4EFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6AFF2CF262E299700A4EFF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F634D22C26313E6B008ACB61 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F634D22D26313EAC008ACB61 /* MessageTableViewCell.swift */,
+				F634D22E26313EAC008ACB61 /* MessageTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F639DA8D262F46100097ABDA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 			children = (
 				F6AFF2CD262E299700A4EFF6 /* AppDelegate.swift */,
 				F6AFF2CF262E299700A4EFF6 /* SceneDelegate.swift */,
+				F634D22C26313E6B008ACB61 /* Components */,
 				F639DA8D262F46100097ABDA /* Helpers */,
 				F6BF1C41262E680E00261FB0 /* View Controllers */,
 				F6AFF2D3262E299700A4EFF6 /* Main.storyboard */,
@@ -176,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6AFF2DA262E299800A4EFF6 /* LaunchScreen.storyboard in Resources */,
+				F634D23026313EAC008ACB61 /* MessageTableViewCell.xib in Resources */,
 				F6AFF2D7262E299800A4EFF6 /* Assets.xcassets in Resources */,
 				F6AFF2D5262E299700A4EFF6 /* Main.storyboard in Resources */,
 			);
@@ -230,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F634D22F26313EAC008ACB61 /* MessageTableViewCell.swift in Sources */,
 				F634D220262F57CF008ACB61 /* Utilities.swift in Sources */,
 				F6AFF2D2262E299700A4EFF6 /* ViewController.swift in Sources */,
 				F6AFF2CE262E299700A4EFF6 /* AppDelegate.swift in Sources */,

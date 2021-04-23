@@ -13,4 +13,3 @@ var currentUser: [String: Any] = [
     "userid": "",
     "username": ""
 ]
-

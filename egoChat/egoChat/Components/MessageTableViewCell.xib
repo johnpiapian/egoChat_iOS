@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="132" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="egoChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Hello how is it going today " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fca-Qm-kgk">
+                        <rect key="frame" x="162" y="34" width="174" height="85"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="174" id="8LS-zN-jIY"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-1q-c0R">
+                        <rect key="frame" x="291.5" y="10" width="37.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="fca-Qm-kgk" secondAttribute="bottom" constant="2" id="Gjj-zr-e9F"/>
+                    <constraint firstItem="9S6-1q-c0R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ayq-O5-DRf"/>
+                    <constraint firstAttribute="trailing" secondItem="9S6-1q-c0R" secondAttribute="trailing" constant="15" id="df3-zU-bSO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fca-Qm-kgk" secondAttribute="trailing" constant="-12" id="e0N-Dk-bkK"/>
+                    <constraint firstItem="fca-Qm-kgk" firstAttribute="top" secondItem="9S6-1q-c0R" secondAttribute="bottom" constant="3.5" id="suu-XI-UMf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="name" destination="9S6-1q-c0R" id="rmF-hD-79y"/>
+                <outlet property="textMsg" destination="fca-Qm-kgk" id="dbW-9L-jsR"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="109.82142857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

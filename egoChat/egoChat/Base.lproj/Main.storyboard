@@ -29,7 +29,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APQ-TT-ceD">
                                 <rect key="frame" x="153" y="484" width="86.333333333333314" height="30"/>
-                                <state key="normal" title="Connect"/>
+                                <state key="normal" title="Join"/>
                                 <connections>
                                     <action selector="Connect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Skd-2d-sWf"/>
                                 </connections>
@@ -65,38 +65,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WYc-Gd-gUz">
-                                <rect key="frame" x="22" y="770" width="300" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOX-5N-uZH">
-                                <rect key="frame" x="327" y="770" width="65" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="ZoK-Nk-IvC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="sendMsg:" destination="kkO-eI-CTG" eventType="touchUpInside" id="IUp-ul-1zy"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-Zl-cnZ">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" id="5Fi-i1-jwY">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="WYc-Gd-gUz">
+                                            <rect key="frame" x="20" y="10" width="300" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="isTyping:" destination="kkO-eI-CTG" eventType="editingChanged" id="Po1-Ua-omi"/>
+                                            </connections>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="Pec-Dj-d9y">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TOX-5N-uZH">
+                                            <rect key="frame" x="329" y="10" width="65" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="ZoK-Nk-IvC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="Send"/>
+                                            <connections>
+                                                <action selector="sendMsg:" destination="kkO-eI-CTG" eventType="touchUpInside" id="IUp-ul-1zy"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-Gt-U38">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TlX-us-oc6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WYc-Gd-gUz" firstAttribute="top" secondItem="TOX-5N-uZH" secondAttribute="top" id="7h6-Oc-WhM"/>
-                            <constraint firstItem="TlX-us-oc6" firstAttribute="trailing" secondItem="TOX-5N-uZH" secondAttribute="trailing" constant="22" id="8Vp-Qc-waG"/>
-                            <constraint firstItem="TlX-us-oc6" firstAttribute="bottom" secondItem="TOX-5N-uZH" secondAttribute="bottom" constant="58" id="O6F-s3-3RL"/>
-                            <constraint firstItem="TlX-us-oc6" firstAttribute="bottom" secondItem="WYc-Gd-gUz" secondAttribute="bottom" constant="58" id="bSR-4P-sir"/>
-                            <constraint firstItem="WYc-Gd-gUz" firstAttribute="leading" secondItem="TlX-us-oc6" secondAttribute="leading" constant="22" id="gX2-dD-lPN"/>
-                            <constraint firstItem="TOX-5N-uZH" firstAttribute="leading" secondItem="WYc-Gd-gUz" secondAttribute="trailing" constant="5" id="nJ1-lC-gzF"/>
-                            <constraint firstItem="WYc-Gd-gUz" firstAttribute="bottom" secondItem="TOX-5N-uZH" secondAttribute="bottom" id="xiS-gf-ZEW"/>
+                            <constraint firstItem="0fx-Zl-cnZ" firstAttribute="bottom" secondItem="TlX-us-oc6" secondAttribute="bottom" id="9FZ-a6-6xV"/>
+                            <constraint firstItem="0fx-Zl-cnZ" firstAttribute="top" secondItem="ejY-Gt-U38" secondAttribute="bottom" id="Atv-pr-qv4"/>
+                            <constraint firstItem="ejY-Gt-U38" firstAttribute="top" secondItem="TlX-us-oc6" secondAttribute="top" id="EtV-FT-IEB"/>
+                            <constraint firstItem="0fx-Zl-cnZ" firstAttribute="leading" secondItem="TlX-us-oc6" secondAttribute="leading" id="THj-Sy-bJt"/>
+                            <constraint firstItem="0fx-Zl-cnZ" firstAttribute="trailing" secondItem="TlX-us-oc6" secondAttribute="trailing" id="ax7-N7-SBz"/>
+                            <constraint firstItem="ejY-Gt-U38" firstAttribute="leading" secondItem="TlX-us-oc6" secondAttribute="leading" id="eV3-MH-Iaw"/>
+                            <constraint firstItem="TlX-us-oc6" firstAttribute="trailing" secondItem="ejY-Gt-U38" secondAttribute="trailing" id="qjk-6f-j94"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="msgField" destination="WYc-Gd-gUz" id="9o4-Zm-0mC"/>
                         <outlet property="sendBtn" destination="TOX-5N-uZH" id="wiY-lL-oIg"/>
+                        <outlet property="tableView" destination="ejY-Gt-U38" id="MuH-AS-iJg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A07-tm-Jyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

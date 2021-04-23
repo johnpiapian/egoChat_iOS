@@ -32,8 +32,8 @@ class ChatController: UIViewController, UITableViewDelegate, UITableViewDataSour
         socket.connect()
         
         // ** TableView
-        let nib = UINib(nibName: "MessageTableViewCell", bundle: nil);
-        tableView.register(nib, forCellReuseIdentifier: "MessageTableViewCell")
+        tableView.register(UINib(nibName: "MessageTableViewCell", bundle: nil), forCellReuseIdentifier: "MessageTableViewCell")
+        tableView.register(UINib(nibName: "MessageTableViewCell_B", bundle: nil), forCellReuseIdentifier: "MessageTableViewCell_B")
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -73,13 +73,27 @@ class ChatController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageTableViewCell",
+        let cellMe = tableView.dequeueReusableCell(withIdentifier: "MessageTableViewCell",
                                                  for: indexPath) as! MessageTableViewCell
         
-        cell.name.text = (messages[indexPath.row]["_userid"] == currentUser["userid"] as? String) ? "You" : messages[indexPath.row]["_username"]
-        cell.textMsg.text = messages[indexPath.row]["_msg"]
+        let cellOther = tableView.dequeueReusableCell(withIdentifier: "MessageTableViewCell_B",
+                                                 for: indexPath) as! MessageTableViewCell_B
         
-        return cell
+        //cellMe.name.text = (messages[indexPath.row]["_userid"] == currentUser["userid"] as? String) ? "You" : messages[indexPath.row]["_username"]
+        //cellMe.textMsg.text = messages[indexPath.row]["_msg"]
+        
+        if messages[indexPath.row]["_userid"] == currentUser["userid"] as? String { // Me
+            cellMe.name.text = "You"
+            cellMe.textMsg.text = messages[indexPath.row]["_msg"]
+            
+            return cellMe
+        }else {
+            cellOther.name.text = messages[indexPath.row]["_username"]
+            cellOther.textMsg.text = messages[indexPath.row]["_msg"]
+            
+            return cellOther
+        }
+        
     }
     
     // Add new messages to View

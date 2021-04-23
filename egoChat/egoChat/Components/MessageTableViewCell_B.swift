@@ -1,14 +1,14 @@
 //
-//  MessageTableViewCell.swift
+//  MessageTableViewCell_B.swift
 //  egoChat
 //
-//  Created by JohnPiaPian on 4/22/21.
+//  Created by JohnPiaPian on 4/23/21.
 //
 
 import UIKit
 
-class MessageTableViewCell: UITableViewCell {
-
+class MessageTableViewCell_B: UITableViewCell {
+    
     @IBOutlet var name: UILabel!
     @IBOutlet var textMsg: UITextView!
     

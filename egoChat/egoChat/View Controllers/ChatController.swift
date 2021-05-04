@@ -15,7 +15,9 @@ class ChatController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var tableView: UITableView!
     
     // Socket IO variables
-    let manager = SocketManager(socketURL: URL(string: "http://localhost:3000")!, config: [.log(false), .compress])
+    //let manager = SocketManager(socketURL: URL(string: "http://localhost:3000")!, config: [.log(false), .compress]) # testing
+    
+    let manager = SocketManager(socketURL: URL(string: "http://chat.appzomi.ml")!, config: [.log(false), .compress])
     var socket: SocketIOClient!
     
     // Messages data for TableView
